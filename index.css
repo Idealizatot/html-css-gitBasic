@@ -11,7 +11,7 @@
 
 .wrapper {
   margin: auto;
-  height: 100hv; /* Почему тут не на всю высоту? */
+  height: 100vh;
   max-width: 750px;
   display: grid;
   grid-template: minmax(90px, auto) 1fr minmax(70px, auto) / 1fr;
@@ -31,6 +31,7 @@
 }
 
 .main {
+  overflow: auto;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr minmax(100px, 250px);
@@ -45,7 +46,7 @@
 }
 
 .paragraphTitle {
-  padding: 0 0 5px;
+  padding-bottom: 3px;
   font-style: oblique;
 }
 
@@ -93,4 +94,8 @@
   font-size: 18px;
   grid-row-start: 3;
   grid-column: 8;
+}
+
+.space {
+  padding-bottom: 15px;
 }
